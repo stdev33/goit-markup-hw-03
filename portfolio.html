@@ -13,8 +13,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
-      integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -52,127 +52,149 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1 hidden>Our portfolio</h1>
-        <ul class="list">
-          <li><button class="filter-button" type="button">All</button></li>
-          <li><button class="filter-button" type="button">Web Site</button></li>
-          <li><button class="filter-button" type="button">App</button></li>
-          <li><button class="filter-button" type="button">Design</button></li>
-          <li>
-            <button class="filter-button" type="button">Marketing</button>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/portfolio/img-portf-1.jpg"
-                alt="Banking App Interface Concept"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Banking App Interface Concept</h2>
-              <p class="card-description">App</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-2.jpg"
-                alt="Cashless Payment"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Cashless Payment</h2>
-              <p class="card-description">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-3.jpg"
-                alt="Meditation Application"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Meditation App</h2>
-              <p class="card-description">App</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-4.jpg"
-                alt="Taxi Service"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Taxi Service</h2>
-              <p class="card-description">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-5.jpg"
-                alt="Screen Illustrations"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Screen Illustrations</h2>
-              <p class="card-description">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-6.jpg"
-                alt="Online Courses"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Online Courses</h2>
-              <p class="card-description">Marketing</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-7.jpg"
-                alt="Instagram Stories Concept"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Instagram Stories Concept</h2>
-              <p class="card-description">Design</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-8.jpg"
-                alt="Organic Food"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Organic Food</h2>
-              <p class="card-description">Web Site</p></a
-            >
-          </li>
-          <li>
-            <a class="link" href=""
-              ><img
-                src="./images/portfolio/img-portf-9.jpg"
-                alt="Fresh Coffee"
-                width="360"
-                height="300"
-              />
-              <h2 class="card-title">Fresh Coffee</h2>
-              <p class="card-description">Web Site</p></a
-            >
-          </li>
-        </ul>
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="visually-hidden">Our portfolio</h1>
+          <ul class="portfolio-filter-list list">
+            <li><button class="filter-button" type="button">All</button></li>
+            <li>
+              <button class="filter-button" type="button">Web Site</button>
+            </li>
+            <li><button class="filter-button" type="button">App</button></li>
+            <li><button class="filter-button" type="button">Design</button></li>
+            <li>
+              <button class="filter-button" type="button">Marketing</button>
+            </li>
+          </ul>
+          <ul class="portfolio-filter-results-list list">
+            <li class="portfolio-list-item">
+              <a class="link" href="">
+                <img
+                  src="./images/portfolio/img-portf-1.jpg"
+                  alt="Banking App Interface Concept"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Banking App Interface Concept</h2>
+                  <p class="card-description">App</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-2.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Cashless Payment</h2>
+                  <p class="card-description">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-3.jpg"
+                  alt="Meditation Application"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Meditation App</h2>
+                  <p class="card-description">App</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-4.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Taxi Service</h2>
+                  <p class="card-description">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-5.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Screen Illustrations</h2>
+                  <p class="card-description">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-6.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Online Courses</h2>
+                  <p class="card-description">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-7.jpg"
+                  alt="Instagram Stories Concept"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Instagram Stories Concept</h2>
+                  <p class="card-description">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-8.jpg"
+                  alt="Organic Food"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Organic Food</h2>
+                  <p class="card-description">Web Site</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-list-item">
+              <a class="link" href=""
+                ><img
+                  src="./images/portfolio/img-portf-9.jpg"
+                  alt="Fresh Coffee"
+                  width="360"
+                  height="300"
+                />
+                <div class="portfolio-list-item-text">
+                  <h2 class="card-title">Fresh Coffee</h2>
+                  <p class="card-description">Web Site</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer-wrapper accent-background">
